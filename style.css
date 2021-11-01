@@ -1,0 +1,154 @@
+.hidden {
+    display: none !important;
+}
+
+
+body {
+    background-color: rgb(200, 200, 200);
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+canvas {
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    position: fixed;
+    background-color: #3B4FBCCC;
+    top: 5vh;
+    left: 2vw;
+    margin: 0;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    color: white;
+}
+
+.trash-groups {
+    position: fixed;
+    top: 60vh;
+    left: 2vw;
+    border-radius: 5px;
+    background-color: rgb(230, 230, 230);
+    overflow: hidden;
+}
+.tg-items-container {
+    background-color: rgb(230, 230, 230);
+    margin-top: 1rem;
+    border-top: 1px solid rgb(150, 150, 150);
+    max-height: 30vh;
+    overflow-y: scroll;
+}
+.tg-items-container > p {
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid rgb(150, 150, 150);
+    cursor: pointer;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+.tg-items-container > p:hover {
+    background-color: rgb(105, 236, 123);
+}
+
+.search-input {
+    position: relative;
+    display: flex;
+    color: rgb(150, 150, 150);
+    padding: .5rem;
+}
+.search-input > i {
+    position: absolute;
+    left: 1rem;
+    align-self: center;
+}
+.search-input > input {
+    padding: .2rem;
+    padding-left: 2rem;
+    background-color: rgb(230, 230, 230);
+    border: 2px solid rgb(150, 150, 150);
+    border-radius: 5px;
+}
+
+#orbital-params {
+    position: fixed;
+    top: 5vh;
+    right: 2vw;
+    width: 15vw;
+    height: 40vh;
+    overflow-y: auto;
+}
+#geographic-location {
+    position: fixed;
+    top: 48vh;
+    right: 2vw;
+    width: 15vw;
+    height: 30vh;
+    overflow-y: auto;
+}
+
+.nice-table {
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.nice-table > p{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: #3B4FBC;
+    color: white;
+    font-size: 1.4rem;
+    margin: 0;
+    padding: .2rem;
+}
+.nt-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    background-color: #F7FF95;
+    position: relative;
+}
+.nt-container > span {
+    height: 3rem;
+    padding: .1rem;
+    border: 1px solid black;
+    word-wrap: break-word;
+}
+
+.predict {
+    position: fixed;
+    top: 80vh;
+    right: 2vw;
+    width: calc(15vw - 1rem);
+    background-color: #F7FF95;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+.predict > * {
+}
+.predict > p {
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 0;
+    margin-top: .4rem;
+    margin-bottom: .4rem;
+}
+
+.predict > button {
+    background-color: #3B4FBC;
+    color: white;
+    border: 2px solid black;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+}
+.predict > input {
+    margin-bottom: .5rem;
+}

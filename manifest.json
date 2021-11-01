@@ -1,0 +1,22 @@
+{
+  "icons": [
+    {
+      "src": "./favicon2.png",
+      "type": "image/png",
+      "sizes": "300x300"
+    }
+  ],
+  "background_color": "#ffffff",
+  "description": "Site to map and predict space debris",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "OrbitalHope",
+  "orientation": "any",
+  "scope": "./",
+  "short_name": "LR",
+  "start_url": "./",
+  "theme_color": "#2f2d2d",
+  "categories": [],
+  "screenshots": [],
+  "shortcuts": []
+}

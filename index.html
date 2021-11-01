@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0d40d8f017.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+    <!-- Manifiesto -->
+    <link rel="manifest" href="manifest.json" />
+    <!-- Service worker -->
+    <script type="module" src="./pwabuilder-sw-register.js"></script>
+
+    <body>
+        <canvas id="canvasOne" width="1024" height="768">
+            Your browser does not support HTML5 Canvas.
+        </canvas>
+
+        <div>
+          <h1>OrbitalHope</h1>
+        </div>
+
+        <div class="ui">
+
+          <div class="predict">
+              <p id="current-hour">Loading...</p>
+              <input type="datetime-local" id="date-input">
+              <button type="button" id="do-predict">Predict</button>
+          </div>
+
+            <div class="trash-groups">
+                <div class="search-input">
+                    <i class="fas fa-search"></i>
+                    <input type="search" id="group-search" placeholder="Type your debris's name">
+                </div>
+                <div class="tg-items-container" id="list-items">
+                </div>
+            </div>
+
+            <div class="trash-info">
+                <div class="nice-table" id="orbital-params">
+                    <p>Orbital Parameters</p>
+                    <div class="nt-container">
+                        <span>NORAD Catalog Number</span>
+                        <span id="info0">N/a</span>
+                        <span>International designator</span>
+                        <span id="info1">N/a</span>
+                        <span>Name</span>
+                        <span id="info2">N/a</span>
+                        <span>Period(minutes)</span>
+                        <span id="info3">N/a</span>
+                        <span>Inclination(degrees)</span>
+                        <span id="info4">N/a</span>
+                        <span>Apogee Height(km)</span>
+                        <span id="info5">N/a</span>
+                        <span>Perigee Height(km)</span>
+                        <span id="info6">N/a</span>
+                        <span>Eccentricity</span>
+                        <span id="info7">N/a</span>
+                    </div>
+                </div>
+
+                <div class="nice-table" id="geographic-location">
+                    <p>Geographic location</p>
+                    <div class="nt-container">
+                        <span>Longitude</span>
+                        <span id="longitude">N/a</span>
+                        <span>Latitude</span>
+                        <span id="latitude">N/a</span>
+                        <span>Altitude</span>
+                        <span id="altitude">N/a</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- satelliteJS  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/4.1.2/satellite.min.js"></script>
+
+        <!-- Worldwind 0.9.0 -->
+        <script  src="worldwind.min.js" type="text/javascript"></script>
+        <script src="script.js" type="text/javascript">
+        <script type="module" src="./pwabuilder-sw.js"></script>
+        </script>
+    </body>
+</html>
